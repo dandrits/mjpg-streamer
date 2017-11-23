@@ -1,5 +1,7 @@
-Motion detection extension for mjpeg-streamer using a pir sensor on a raspberry pi. This way a little motion sensor camera that
-takes photo and sends it as an email is created.
+Motion detection extension for mjpeg-streamer using a pir sensor on a raspberry pi. 
+====================================================================================
+
+This way a little motion sensor camera that takes photo and sends it as an email is created.
 
 Ingredients:
 
