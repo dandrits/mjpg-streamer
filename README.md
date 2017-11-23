@@ -2,11 +2,24 @@ Motion detection extension for mjpeg-streamer using a pir sensor on a raspberry 
 takes photo and sends it as an email is created.
 
 Ingredients:
+
+
 1)Raspberry Pi (any model should do the work) with Raspbian on any other debian like OS (or else you should use mjpeg shell script in different way)
+
+
 2)Raspberry Pi Camera (enabled) or any other Web Camera compatible with mjpeg-streamer and Raspberry Pi
+
+
+
 3)A pir sensor with it's data pin connected to GPIO pin 4 or any other if change the sensor variable on pir.py
+
+
 4)An smtp email account set up on the pir.py
+
+
 5)Internet connection for the Raspberry Pi
+
+
 6)Enjoy!
 
 
