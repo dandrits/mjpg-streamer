@@ -5,24 +5,25 @@ This way a little motion sensor camera that takes photo and sends it as an email
 
 Ingredients:
 
-
 1)Raspberry Pi (any model should do the work) with Raspbian on any other debian like OS (or else you should use mjpeg shell script in different way)
 
 
 2)Raspberry Pi Camera (enabled) or any other Web Camera compatible with mjpeg-streamer and Raspberry Pi
 
 
-
-3)A pir sensor with it's data pin connected to GPIO pin 4 or any other if change the sensor variable on pir.py
-
-
-4)An smtp email account set up on the pir.py
+3)Installed mjpeg-stramer (see below)
 
 
-5)Internet connection for the Raspberry Pi
+4)A pir sensor with it's data pin connected to GPIO pin 4 or any other if change the sensor variable on pir.py
 
 
-6)Enjoy!
+5)An smtp email account set up on the pir.py
+
+
+6)Internet connection for the Raspberry Pi
+
+
+7)Enjoy!
 
 
 mjpg-streamer
