@@ -1,0 +1,24 @@
+#!/bin/bash
+### BEGIN INIT INFO
+# Provides:          mjpeg startatup
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Start daemon at boot time
+# Description:       Enable service provided by daemon.
+### END INIT INFO
+
+case "$1" in
+start)
+    LD_LIBRARY_PATH=/usr/local/lib/mjpeg-streamer mjpg_streamer -o "output_http.so -w /usr/local/www" -i "input_raspicam.so -fps 15 -ex night" &
+    python /usr/local/bin/pir.py &
+    ;;
+stop)
+    killall mjpeg_streamer
+    killall python
+    ;;
+*)
+    echo "$0 <start|stop>"
+    exit 1
+esac
